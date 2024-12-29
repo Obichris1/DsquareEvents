@@ -1,4 +1,4 @@
-// components/ContactForm.js
+
 "use client";
 import { useState } from "react";
 import {
@@ -103,12 +103,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <Typography
-        variant="h1"
-        className="text-center font-bold text-xl md:text-3xl "
-      >
-        Get In Touch <span className="text-[#EBB709]">With Us</span>
-      </Typography>
+    
       <form onSubmit={handleSubmit} className={` ${success ? 'hidden' : 'flex flex-col gap-8' }`}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* <label htmlFor="name">Name:</label> */}
