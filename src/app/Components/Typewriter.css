@@ -1,0 +1,87 @@
+/* Fade-in for characters */
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide-in for words (if applied to words) */
+  .slide-in {
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Reset Scale-Up Animation */
+  .scale-up {
+    animation: scaleUp 0.5s ease-out;
+  }
+  
+  @keyframes scaleUp {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+  }
+  
+  /* Blinking Cursor */
+  .blinking-cursor {
+    display: inline-block;
+    border-right: 2px solid gray;
+    animation: blink-scale 1s infinite;
+  }
+  
+  @keyframes blink-scale {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Gradient Background Animation */
+  .gradient-bg {
+    background: linear-gradient(90deg, #f3ec78, #af4261);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

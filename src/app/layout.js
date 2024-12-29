@@ -1,5 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import AppDatePickerProvider from "./Components/Features/AppDatePicker";
+import WhatsAppIcon from "./Components/WhatsappIcon";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,9 +25,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className=""
       >
-        {children}
+        <Navbar />
+    
+        <AppDatePickerProvider>{children}</AppDatePickerProvider>
+
+        <WhatsAppIcon />
+       
+        <Footer />
+
+
       </body>
     </html>
   );
