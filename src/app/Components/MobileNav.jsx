@@ -36,7 +36,7 @@ const MobileNav = () => {
         {isOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
       </div>
 
-      {isOpen && <div className="bg-black text-brown flex flex-col uppercase text-[12px] absolute left-0 top-24 w-full h-[calc(100vh-6rem)] gap-8 justify-center items-center z-10 transition-all ease-in-out duration-1000" >
+      {isOpen && <div className="bg-red-200 flex flex-col uppercase  text-[12px] absolute left-0 top-24 w-full h-[calc(100vh-6rem)] gap-8 justify-center items-center " >
         {links.map((link) =>
         <Link href={link.url} key={link.id} onClick={showMenu}>
             {link.title}

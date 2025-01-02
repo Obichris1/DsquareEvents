@@ -54,7 +54,7 @@ const page = () => {
 
         <motion.div variants={slideInRight}>
           <Image
-            src="/Gallery/Gallery5.jpeg"
+            src="/Gallery/picture-11.jpg"
             width={500}
             height={500}
             alt="Event Center"
@@ -73,7 +73,7 @@ const page = () => {
       >
         <motion.div variants={slideInLeft}>
           <Image
-            src="/Gallery/Gallery8.jpeg"
+            src="/Gallery/picture-2.jpg"
             width={500}
             height={500}
             alt="Photoshoot Corner"

@@ -28,11 +28,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div  className={`sticky p-8 top-0 left-0 w-full z-50 transition-all duration-300 ${
+    <div  className={`h-24 sticky py-4 top-0 left-0 w-full z-50 transition-all duration-300 ${
       isScrolled ? "bg-black " : "bg-black "
-    }`}>
+    }`}>  
       {/* DESKTOP NAVIGATION */}
-      <div className="hidden lg:flex justify-between items-center">
+      <div className="hidden lg:flex justify-between items-center w-[90%] m-auto">
         <div className="">
           <Link href="/">
            
@@ -77,14 +77,14 @@ const Navbar = () => {
       </div>
 
       {/* MOBILE NAVIGATION */}
-      <div className="flex items-center justify-between lg:hidden">
+      <div className="flex items-center justify-between lg:hidden w-[90%] m-auto">
         <div className="">
           <Link href="/">
             
             <img src="/Logo.jpg" alt="" width={200} />
           </Link>
         </div>
-        <div className="">
+        <div className="z-1 transition ">
           <MobileNav />
 
        
