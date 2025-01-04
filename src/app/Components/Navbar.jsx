@@ -84,7 +84,7 @@ const Navbar = () => {
             <img src="/Logo.jpg" alt="" width={150} />
           </Link>
         </div>
-        <div className="z-1 transition ">
+        <div className="">
           <MobileNav />
 
        
