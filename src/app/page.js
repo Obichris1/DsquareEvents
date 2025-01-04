@@ -43,7 +43,7 @@ export default function Home() {
          
                width={800}
                height={200}
-                className="max-h-[350px] md:max-h-[400px]"  />
+                className="max-h-[350px] md:max-h-[400px] rounded-lg shadow-xl"  />
         </div>
       
       </div>

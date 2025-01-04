@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="">
           <Link href="/">
            
-            <img src="/Logo.jpg" alt="" width={200} />
+            <img src="/Logo.jpg" alt="" width={180} />
           </Link>
         </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
         <div className="">
           <Link href="/">
             
-            <img src="/Logo.jpg" alt="" width={200} />
+            <img src="/Logo.jpg" alt="" width={150} />
           </Link>
         </div>
         <div className="z-1 transition ">

@@ -26,7 +26,7 @@ const HeroSection = () => {
     {
       id: 4,
       title: "the best pizza to share with your family",
-      image: "/Gallery/picture-11.jpg",
+      image: "/Gallery/picture-13.jpg",
     },
   ];
 

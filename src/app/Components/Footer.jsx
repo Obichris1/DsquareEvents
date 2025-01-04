@@ -13,9 +13,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[black] p-8 mt-20 ">
+    <div className="bg-[black] mt-20 ">
       {/* Contact Us */}
-      <div className="flex flex-col gap-10 mb-12">
+      <div className="flex flex-col gap-10 mb-12 w-[90%] m-auto py-4">
       <div className="text-[#aaa5a5] text-sm flex flex-col gap-3 ">
         <span className="flex items-center gap-6">
           <AiOutlineEnvironment />{" "}
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* SOCIAL MEDIA  */}
 
-          <div className="flex gap-3">
+          <div className="flex gap-3 self-end">
             <Link href="" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
               <AiFillFacebook />
             </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
 
       <hr className="border-[#aaa5a5]" />
    
-      <div className=" text-white flex justify-between mt-4 ">
+      <div className="py-4 w-[90%] m-auto text-white flex justify-between ">
         {/* Logo */}
         <div className="">
           <Link href="/">
@@ -70,7 +70,7 @@ const Footer = () => {
 
         {/* Text */}
         <div className="flex items-center justify-center">
-          <Typography className="text-sm text-[#aaa5a5] text-center flex items-center justify-center ">&copy; 2024 D Square events center | Designed by O'XRIS TECH </Typography>
+          <Typography className="text-xs text-[#aaa5a5] text-center flex ">&copy; 2024 D Square events center. | Designed by O'Xris Solutions </Typography>
         </div>
 
         <div></div>
