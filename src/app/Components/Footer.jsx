@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* SOCIAL MEDIA  */}
 
-          <div className="flex gap-3 self-end">
+          <div className="flex gap-3 md:self-end">
             <Link href="" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
               <AiFillFacebook />
             </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
 
       <hr className="border-[#aaa5a5]" />
    
-      <div className="py-4 w-[90%] m-auto text-white flex justify-between ">
+      <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-2">
         {/* Logo */}
         <div className="">
           <Link href="/">
