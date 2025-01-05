@@ -2,8 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const HeroSection = () => {
+  const isLargeScreen = useMediaQuery("(min-width: 768px)");
+
   const data = [
     {
       id: 1,
@@ -38,22 +41,34 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="h-screen w-screen relative overflow-hidden">
-      {data.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-        >
-          <Image
-            src={slide.image}
-            alt={slide.title}
-            fill
-            className="w-full h-full object-fill"
-          />
-        </div>
-      ))}
+    <div className="  h-[calc(100vh-25rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
+      <div className={isLargeScreen ? "relative w-full h-full" : "w-full h-1/2"}>
+        {data.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
+              index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          >
+            {isLargeScreen ? (
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+                className="object-cover"
+              />
+            ) : (
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                width={800}
+                height={800}
+                className="object-contain"
+              />
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
