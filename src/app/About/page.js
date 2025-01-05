@@ -37,7 +37,7 @@ const page = () => {
         >
         <div className="md:w-[50%] flex flex-col gap-4">
           <Typography variant="h5" className="font-bold mb-2">
-            Why Choose <span className="text-[#EBB709]">D'Square?</span>
+            Why Choose <span className="text-brandYellow">D'Square?</span>
           </Typography>
           <div className=" rounded-lg">
             
@@ -83,7 +83,7 @@ const page = () => {
 
         <div className="md:w-[50%] flex flex-col gap-4">
           <Typography variant="h5" className="font-bold mb-2">
-            Dedicated <span className="text-[#EBB709]">Photoshoot Corner</span>
+            Dedicated <span className="text-brandYellow">Photoshoot Corner</span>
           </Typography>
           <div className="">
        
@@ -108,7 +108,7 @@ const page = () => {
       >
         <div className="md:w-[50%] flex flex-col gap-4">
           <Typography variant="h5" className="font-bold mb-2">
-            Modern <span className="text-[#EBB709]">Amenities</span>
+            Modern <span className="text-brandYellow">Amenities</span>
           </Typography>
           <div className="">
        

@@ -27,14 +27,14 @@ const TypewriterEffect = ({text}) => {
           // Highlight specific words dynamically
           if (word === "us") {
             return (
-              <span key={wordIndex} className="text-[#EBB709] font-bold">
+              <span key={wordIndex} className="text-brandYellow font-bold">
                 {word}{" "}
               </span>
             );
           }
           if (word === "D'square" ) {
             return (
-              <span key={wordIndex} className="text-[#EBB709] font-bold">
+              <span key={wordIndex} className="text-brandYellow font-bold">
                 {word}
               </span>
             );

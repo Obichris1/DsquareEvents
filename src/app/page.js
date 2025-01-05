@@ -20,7 +20,7 @@ export default function Home() {
             variant="h6"
           >
             Located in the heart of Idimu, Ikotun,{" "}
-            <span className="text-[#EBB709] font-semibold">D'Square</span> Event
+            <span className="text-brandYellow font-semibold">D'Square</span> Event
             Centre is where unforgettable celebrations come to life. With our
             spacious, elegant halls and modern facilities, we cater to all your
             event needs, from weddings and birthdays to corporate gatherings and
@@ -41,7 +41,7 @@ export default function Home() {
           </Typography>
 
           <Button
-            className="self-start bg-[#EBB709] text-black px-4 py-2 text-xs font-medium rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform"
+            className="self-start bg-brandYellow text-black px-4 py-2 text-xs font-medium rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform"
           >
             More about us
           </Button>

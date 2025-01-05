@@ -123,7 +123,7 @@ const PackagesSection = () => {
                 {pkg.price}
               </Typography>
               <Button
-                className="mt-4 px-4 py-2 bg-[#EBB709] text-black text-xs font-medium rounded-full hover:bg-[#d5a607] transition-colors justify-start"
+                className="mt-4 px-4 py-2 bg-brandYellow text-black text-xs font-medium rounded-full hover:bg-[#d5a607] transition-colors justify-start"
               >
                 Book Now
               </Button>

@@ -53,7 +53,7 @@ const page = () => {
      
         className="text-center font-bold text-xl md:text-3xl "
       >
-        Get In Touch <span className="text-[#EBB709]">With Us</span>
+        Get In Touch <span className="text-brandYellow">With Us</span>
       </Typography>
 
          <ContactForm />
