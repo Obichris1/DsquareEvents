@@ -11,9 +11,9 @@ const WhatsAppIcon = () => {
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
         alt="WhatsApp"
-        className="w-6 h-6"
+        className="w-8 h-8"
       />
-      <span className="ml-2 text-white text-sm font-medium">Chat with us </span>
+      
     </a>
   );
 };
