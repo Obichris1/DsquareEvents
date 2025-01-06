@@ -56,12 +56,11 @@ const HeroSection = () => {
             ) : (
               <div>
                 <div className="absolute inset-0">
-              <Image
+              <img
                 src={slide.image}
                 alt={slide.title}
-                width={500}
-                height={500}
-                className="object-contain h-full w-full"
+              
+                className=""
 
                 
               />
