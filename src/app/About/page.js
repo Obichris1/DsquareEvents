@@ -5,6 +5,7 @@ import TypewriterEffect from "../Components/Typewriter";
 import { Typography, Card, CardContent } from "@mui/material";
 import Image from "next/image";
 import { motion } from "framer-motion"; 
+import { Carousel } from "../Components/Carousel";
 
 
 const page = () => {
@@ -25,7 +26,7 @@ const page = () => {
     <div className="w-[90%] m-auto flex flex-col gap-8 md:w-[90%]">
       {/* Typewriter Heading */}
       <TypewriterEffect text={animatedText} />
-      <hr className="mt-5" />
+      <hr className="" />
 
       {/* Section 1: Why Choose D'Square */}
       <motion.div
@@ -33,20 +34,20 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideInLeft}
-        className="flex flex-col md:flex-row items-center justify-center gap-12 text-gray-500"
+        className="flex flex-col md:flex-row items-center justify-center gap-12"
         >
         <div className="md:w-[50%] flex flex-col gap-4">
-          <Typography variant="h5" className="font-bold mb-2">
+          <Typography variant="h6" className="font-bold mb-2">
             Why Choose <span className="text-brandYellow">D'Square?</span>
           </Typography>
           <div className=" rounded-lg">
             
               <Typography className="text-[14px] leading-7">
-                With a spacious 700-seating capacity, our facility is designed
-                to provide comfort and style for gatherings of all sizes. Enjoy
-                modern amenities, including changing rooms, air conditioning,
-                and fully equipped hygienic restrooms that cater to your guests'
-                needs.
+                With a spacious 600-seating capacity, our facility is designed
+                to provide comfort and style for gatherings of all sizes. 
+                From weddings and corporate events to intimate gatherings, our versatile space is designed to adapt to your unique needs.
+                Located at the heart of Ikotun-Idimu, our facility offers easy accessibility from major
+                roads, ensuring convenience and safety for all attendees. 
               </Typography>
         
           </div>
@@ -58,7 +59,7 @@ const page = () => {
             width={500}
             height={500}
             alt="Event Center"
-            className="object-cover rounded-lg shadow-lg"
+            className="object-cover rounded-md shadow-md"
           />
         </motion.div>
       </motion.div>
@@ -69,7 +70,7 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideInRight}
-        className="flex flex-col md:flex-row items-center justify-center gap-12 text-gray-500"
+        className="flex flex-col md:flex-row items-center justify-center gap-12 "
       >
         <motion.div variants={slideInLeft}>
           <Image
@@ -77,12 +78,12 @@ const page = () => {
             width={500}
             height={500}
             alt="Photoshoot Corner"
-            className="object-cover rounded-lg shadow-lg"
+            className="object-cover rounded-sm shadow-md"
           />
         </motion.div>
 
         <div className="md:w-[50%] flex flex-col gap-4">
-          <Typography variant="h5" className="font-bold mb-2">
+          <Typography variant="h6" className="font-bold mb-2">
             Dedicated <span className="text-brandYellow">Photoshoot Corner</span>
           </Typography>
           <div className="">
@@ -104,33 +105,31 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideInLeft}
-        className="flex flex-col md:flex-row items-center justify-center gap-12 text-gray-500"
+        className="flex flex-col md:flex-row items-center justify-center gap-12 "
       >
         <div className="md:w-[50%] flex flex-col gap-4">
-          <Typography variant="h5" className="font-bold mb-2">
+          <Typography variant="h6" className="font-bold mb-2">
             Modern <span className="text-brandYellow">Amenities</span>
           </Typography>
           <div className="">
        
               <Typography className="text-[14px] leading-7">
                 Our venue features state-of-the-art amenities such as secure car
-                parking, CCTV surveillance, and easy accessibility from major
-                roads, ensuring convenience and safety for all attendees.
+                parking, CCTV surveillance,Enjoy
+                modern amenities, including changing rooms, air conditioning,
+                and fully equipped hygienic restrooms that cater to your guests'
+                needs. 
               </Typography>
-\
+
           </div>
         </div>
 
         <motion.div variants={slideInRight}>
-          <Image
-            src="/Gallery/Gallery5.jpeg"
-            width={500}
-            height={500}
-            alt="Modern Amenities"
-            className="object-cover rounded-lg shadow-lg"
-          />
+            <Carousel />
         </motion.div>
       </motion.div>
+
+     
     </div>
   );
 };

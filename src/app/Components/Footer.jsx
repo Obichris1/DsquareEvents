@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[black]">
+    <div className="bg-[black] mt-10">
       {/* Contact Us */}
 
       <div className="flex flex-col gap-10 mb-4 w-[90%] m-auto py-12">
