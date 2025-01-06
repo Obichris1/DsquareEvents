@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import AppDatePickerProvider from "./Components/Features/AppDatePicker";
 import WhatsAppIcon from "./Components/WhatsappIcon";
+import Head from "next/head";
 
 
 export const metadata = {
@@ -14,6 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      </head>
       <body
         className=""
       >

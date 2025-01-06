@@ -60,7 +60,7 @@ const HeroSection = () => {
                 src={slide.image}
                 alt={slide.title}
                 width={500}
-                height={400}
+                height={500}
                 className="object-contain"
 
                 
