@@ -18,7 +18,7 @@ const Footer = () => {
 
       <div className="flex flex-col gap-10 mb-4 w-[90%] m-auto py-12">
       <div className="text-[#aaa5a5] text-xs flex flex-col gap-3 ">
-      <Typography  className="font-bold text-xs  uppercase text-[#aaa5a5] mb-4 " >Contact info</Typography>
+      <Typography  className="font-bold text-xs  uppercase text-[#aaa5a5] mb-4">Contact info</Typography>
         <span className="flex items-center gap-6">
           <AiOutlineEnvironment />{" "}
           <Link
@@ -62,7 +62,7 @@ const Footer = () => {
 
       <hr className="border-[#aaa5a5]" />
    
-      <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-3">
+      <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-2 ">
     
         {/* Logo */}
         <div className="">
@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Text */}
         <div className="flex items-center justify-center flex-col md:flex-row gap-1">
           <Typography className="text-xxs md:text-xs text-[#aaa5a5] text-center flex ">&copy; 2024 D Square events center. | Designed by   </Typography>
-            <Typography className="text-[10px] md:text-xs text-[#aaa5a5] text-center flex "><Link href=""> O'XRIS SOLUTIONS</Link></Typography>
+            <Typography className="text-xs text-[#aaa5a5] text-center flex "><Link href=""> OXRIS SOLUTIONS</Link></Typography>
           
         </div>
 
