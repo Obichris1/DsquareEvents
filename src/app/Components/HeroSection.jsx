@@ -70,7 +70,7 @@ const HeroSection = () => {
 
 
       {/* Text Overlay */}
-      <div className="relative w-[70%] m-auto top-72 z-10 flex flex-col justify-center items-center h-full px-6 text-center text-black bg-white ">
+      <div className="relative w-[70%] m-auto top-48 z-10 flex flex-col justify-center items-center h-full px-6 text-center text-black bg-white ">
         <h1 className="text-4xl md:text-6xl font-bold">
           Welcome to Royal Oaks Events Limited
         </h1>
