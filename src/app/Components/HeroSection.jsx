@@ -37,8 +37,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="  h-[calc(100vh-12rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
-      <div className={isLargeScreen ? "relative w-full h-full" : "w-full h-1/2"}>
+    <div className="  h-[calc(100vh-25rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
+      <div className={isLargeScreen ? "relative w-full h-full" : "w-full "}>
         {data.map((slide, index) => (
           <div
             key={slide.id}
@@ -57,8 +57,9 @@ const HeroSection = () => {
               <Image
                 src={slide.image}
                 alt={slide.title}
-                fill
-                className="object-cover"
+                width={800}
+                height={800}
+                className="object-contain"
               />
             )}
           </div>
