@@ -12,6 +12,10 @@ module.exports = {
         foreground: "var(--foreground)",
         brandYellow: "#EBB709",
       },
+
+      fontSize :{
+        xxs : "10px"
+      }
      
     },
   },
