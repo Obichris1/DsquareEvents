@@ -37,8 +37,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="  h-[calc(100vh-25rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
-      <div className={isLargeScreen ? "relative w-full h-full" : "w-full "}>
+    <div className=" h-[calc(100vh-12rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
+      <div className={isLargeScreen ? "relative w-full h-full" : "w-full h-full "}>
         {data.map((slide, index) => (
           <div
             key={slide.id}
@@ -54,13 +54,34 @@ const HeroSection = () => {
                 className="object-cover"
               />
             ) : (
+              <div>
+                <div className="absolute inset-0">
               <Image
                 src={slide.image}
                 alt={slide.title}
                 width={800}
                 height={800}
                 className="object-contain"
+
+                
               />
+
+</div>
+
+
+      {/* Text Overlay */}
+      <div className="relative w-[70%] m-auto top-72 z-10 flex flex-col justify-center items-center h-full px-6 text-center text-black bg-white ">
+        <h1 className="text-4xl md:text-6xl font-bold">
+          Welcome to Royal Oaks Events Limited
+        </h1>
+        <p className="text-lg md:text-2xl font-light mt-4">
+          Event Centre <span className="text-[#EBB709] font-semibold">&</span>{" "}
+          Party rentals in Lekki, Lagos, Nigeria.
+        </p>
+      </div>
+</div>
+
+              
             )}
           </div>
         ))}
