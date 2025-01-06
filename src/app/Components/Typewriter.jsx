@@ -22,7 +22,7 @@ const TypewriterEffect = ({text}) => {
 
   return (
     <div className="text-center mt-10">
-      <h1 className="text-2xl md:text-4xl font-bold text-gray-800">
+      <h1 className="text-xl md:text-4xl font-bold text-gray-800">
         {displayedText.split(" ").map((word, wordIndex) => {
           // Highlight specific words dynamically
           if (word === "us") {

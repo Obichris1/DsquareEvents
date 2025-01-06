@@ -10,20 +10,20 @@ const Gallery = () => {
 
   const items = [
     { type: "image", src: "/Gallery/HeroImage1.jpg", alt: "Event 1" },
-    { type: "video", src: "Gallery/Vid8.mp4", alt: "Event 3" },
+    { type: "video", src: "/Gallery/Vid8.mp4", alt: "Event 3" },
     { type: "image", src: "/Gallery/HeroImage2.jpg", alt: "Event 2" },
     { type: "image", src: "Gallery/Gallery1.webp", alt: "Event 1" },
     { type: "video", src: "/Gallery/Vid6.mp4", alt: "Event 2" },
-    { type: "image", src: "Gallery/Gallery5.jpg", alt: "Event 3" },
+    { type: "image", src: "/Gallery/Gallery5.jpg", alt: "Event 3" },
     { type: "video", src: "/Gallery/Vid2.mp4", alt: "Event 1" },
     { type: "image", src: "/Gallery/Gallery6.jpg", alt: "Event 2" },
     { type: "video", src: "Gallery/Vid1.mp4", alt: "Event 3" },
     { type: "image", src: "Gallery/Gallery3.webp", alt: "Event 1" },
     { type: "video", src: "/Gallery/Vid4.mp4", alt: "Event 2" },
-    { type: "video", src: "Vid1.mp4", alt: "Event 3" },
+    { type: "video", src: "/Vid1.mp4", alt: "Event 3" },
     { type: "image", src: "/Gallery/HeroImage1.jpg", alt: "Event 1" },
     { type: "image", src: "/Gallery/HeroImage2.jpg", alt: "Event 2" },
-    { type: "video", src: "Vid1.mp4", alt: "Event 3" },
+    { type: "video", src: "/Vid1.mp4", alt: "Event 3" },
   ];
 
   const openModal = (media, isVideo) => {

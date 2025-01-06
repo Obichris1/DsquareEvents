@@ -19,7 +19,7 @@ const page = () => {
       {/* <Typography variant='h2' className='text-center'>Think celebration, Think D'square</Typography>
        */}
        <TypewriterEffect text={animatedText} />
-       <hr className='mt-5' />
+       <hr className='mt-3' />
        
       <Gallery />
 
