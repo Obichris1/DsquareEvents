@@ -70,7 +70,8 @@ const Footer = () => {
 
         {/* Text */}
         <div className="flex items-center justify-center">
-          <Typography className="text-xs text-[#aaa5a5] text-center flex ">&copy; 2024 D Square events center. | Designed by O'Xris Solutions </Typography>
+          <Typography className="text-xs text-[#aaa5a5] text-center flex ">&copy; 2024 D Square events center. | Designed by <span><Link href=""> O'XRIS SOLUTIONS</Link></span> </Typography>
+          
         </div>
 
         <div></div>

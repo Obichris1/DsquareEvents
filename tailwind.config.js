@@ -12,6 +12,7 @@ module.exports = {
         foreground: "var(--foreground)",
         brandYellow: "#EBB709",
       },
+     
     },
   },
   plugins: [],

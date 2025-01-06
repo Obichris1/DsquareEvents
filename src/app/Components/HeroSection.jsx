@@ -8,11 +8,7 @@ const HeroSection = () => {
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
 
   const data = [
-    {
-      id: 1,
-      title: "always fresh & always crispy & always hot",
-      image: "/Gallery/HeroImage1.jpeg",
-    },
+  
     {
       id: 2,
       title: "we deliver your order wherever you are in Lagos",

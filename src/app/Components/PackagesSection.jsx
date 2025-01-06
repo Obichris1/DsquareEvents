@@ -111,7 +111,7 @@ const PackagesSection = () => {
               <ul className="text-sm text-gray-600 space-y-1">
                 {pkg.features.map((feature, i) => (
                   <li key={i} className="flex items-center">
-                    <span className="mr-2 text-[#EBB708]">✔</span>
+                    <span className="mr-2 text-brandYellow">✔</span>
                     {feature}
                   </li>
                 ))}
