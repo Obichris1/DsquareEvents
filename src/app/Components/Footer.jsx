@@ -13,10 +13,12 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[black] mt-20 ">
+    <div className="bg-[black]">
       {/* Contact Us */}
-      <div className="flex flex-col gap-10 mb-12 w-[90%] m-auto py-4">
-      <div className="text-[#aaa5a5] text-sm flex flex-col gap-3 ">
+
+      <div className="flex flex-col gap-10 mb-4 w-[90%] m-auto py-12">
+      <div className="text-[#aaa5a5] text-xs flex flex-col gap-3 ">
+      <Typography  className="font-bold text-xs md:text-[16px] uppercase text-[#aaa5a5] mb-4 " >Contact info</Typography>
         <span className="flex items-center gap-6">
           <AiOutlineEnvironment />{" "}
           <Link
@@ -24,18 +26,18 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            235 Ikotun - Idimu Rd, Egbe, Lagos 102213, Lagos
+            235, Ariket Plaza Alake B/stop Ikotun-Idimu Road, Lagos
           </Link>
         </span>
         <span className="flex items-center gap-6">
           <AiOutlineMail />{" "}
           <Link href="mailto:example@example.com?subject=Inquiry&body=Hello, I have a question...">
-            d'square@gmail.com
+            dolaposquare123@gmail.com
           </Link>
         </span>
         <span className="flex items-center gap-6">
           <AiOutlinePhone />
-          <Link href="tel:+234 898 6372">+234 812 961 4462</Link>
+          <Link href="tel:+234 916 523 5934">+234 916 523 5934</Link>
       
         </span>
        </div>
@@ -60,7 +62,8 @@ const Footer = () => {
 
       <hr className="border-[#aaa5a5]" />
    
-      <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-2">
+      <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-3">
+    
         {/* Logo */}
         <div className="">
           <Link href="/">
@@ -69,8 +72,9 @@ const Footer = () => {
         </div>
 
         {/* Text */}
-        <div className="flex items-center justify-center">
-          <Typography className="text-xs text-[#aaa5a5] text-center flex ">&copy; 2024 D Square events center. | Designed by <span><Link href=""> O'XRIS SOLUTIONS</Link></span> </Typography>
+        <div className="flex items-center justify-center flex-col md:flex-row gap-1">
+          <Typography className="text-[10px] md:text-xs text-[#aaa5a5] text-center flex ">&copy; 2024 D Square events center. | Designed by   </Typography>
+            <Typography className="text-[10px] md:text-xs text-[#aaa5a5] text-center flex "><Link href=""> O'XRIS SOLUTIONS</Link></Typography>
           
         </div>
 
