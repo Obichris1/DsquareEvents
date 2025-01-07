@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="space-y-8 md:space-y-12">
+    <div className="md:space-y-12">
       {/* Hero Section */}
       <HeroSection />
 
