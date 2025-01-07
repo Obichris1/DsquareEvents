@@ -10,17 +10,17 @@ const HeroSection = () => {
   const data = [
     {
       id: 2,
-      title: "we deliver your order wherever you are in Lagos",
+    
       image: "/Gallery/picture-5.jpg",
     },
     {
       id: 3,
-      title: "the best pizza to share with your family",
+  
       image: "/Gallery/picture-7.jpg",
     },
     {
       id: 4,
-      title: "the best pizza to share with your family",
+    
       image: "/Gallery/picture-13.jpg",
     },
   ];
@@ -36,7 +36,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className=" h-[calc(100vh-25rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
+    <div className=" h-[calc(100vh-38rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
       <div className={isLargeScreen ? "relative w-full h-full" : "w-full  "}>
         {data.map((slide, index) => (
           <div
@@ -55,19 +55,10 @@ const HeroSection = () => {
             ) : (
               <div>
                 <div className="absolute inset-0">
-                  <Image src={slide.image} alt={slide.title} width={800} height={500} className="bg-red-300 w-full" />
+                  <Image src={slide.image} alt={slide.title} width={800} height={800} className="w-full" />
                 </div>
 
-                {/* Text Overlay */}
-                {/* <div className="relative w-[70%] m-auto top-48 z-10 flex flex-col justify-center items-center h-full px-6 text-center text-black bg-white ">
-        <h1 className="text-4xl md:text-6xl fontBold">
-          Welcome to Royal Oaks Events Limited
-        </h1>
-        <p className="text-lg md:text-2xl font-light mt-4">
-          Event Centre <span className="text-[#EBB709] font-semibold">&</span>{" "}
-          Party rentals in Lekki, Lagos, Nigeria.
-        </p>
-      </div> */}
+            
               </div>
             )}
           </div>

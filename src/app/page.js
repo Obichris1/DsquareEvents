@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="space-y-8 md:space-y-12">
       {/* Hero Section */}
       <HeroSection />
 
@@ -36,7 +36,7 @@ export default function Home() {
             we aim to create experiences that leave lasting impressions.
           </Typography>
 
-          <button className="self-start bg-brandYellow text-black px-4 py-3 text-xs font-medium rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform">
+          <button className="self-start bg-brandYellow text-black px-4 py-3 md:p-4 text-xs uppercase font-semibold rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform">
             More about us
           </button>
         </div>
@@ -46,8 +46,8 @@ export default function Home() {
           <Image
             src="/Gallery/HeroImage3.jpeg"
             alt="Event Center"
-            width={800}
-            height={600}
+            width={400}
+            height={400}
             className="max-h-[400px] rounded-lg shadow-lg object-cover"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black/20 rounded-lg"></div>

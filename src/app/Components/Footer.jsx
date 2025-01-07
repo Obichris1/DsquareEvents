@@ -10,6 +10,7 @@ import {
   AiOutlineX,
   AiOutlineFacebook
 } from "react-icons/ai";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -67,14 +68,14 @@ const Footer = () => {
         {/* Logo */}
         <div className="">
           <Link href="/">
-            <img src="/Logo.jpg" alt="" width={150} />
+            <Image src="/Logo.jpg" alt="" width={150} height={150}/>
           </Link>
         </div>
 
         {/* Text */}
         <div className="flex items-center justify-center flex-col md:flex-row gap-1">
-          <Typography className="text-xxs md:text-xs text-[#aaa5a5] text-center  ">&copy; 2024 D Square events center. | Designed by   </Typography>
-            <Typography className="text-xxs text-[#aaa5a5] text-center  "><Link href=""> OXRIS SOLUTIONS</Link></Typography>
+          <Typography className="text-xs text-[#aaa5a5] text-center  ">&copy; 2024 D Square events center. | Designed by   </Typography>
+            <Typography className="text-xs text-[10px] text-[#aaa5a5] text-center  "><Link href=""> OXRIS SOLUTIONS</Link></Typography>
           
         </div>
 
