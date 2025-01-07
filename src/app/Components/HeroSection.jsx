@@ -8,7 +8,6 @@ const HeroSection = () => {
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
 
   const data = [
-  
     {
       id: 2,
       title: "we deliver your order wherever you are in Lagos",
@@ -37,7 +36,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className=" h-[calc(100vh-25rem)] bg-red-400 md:h-[calc(100vh-6rem)] relative overflow-hidden">
+    <div className=" h-[calc(100vh-25rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
       <div className={isLargeScreen ? "relative w-full h-full" : "w-full  "}>
         {data.map((slide, index) => (
           <div
@@ -56,21 +55,12 @@ const HeroSection = () => {
             ) : (
               <div>
                 <div className="absolute inset-0">
-              <img
-                src={slide.image}
-                alt={slide.title}
-              
-                className=""
+                  <Image src={slide.image} alt={slide.title} width={800} height={500} className="bg-red-300 w-full" />
+                </div>
 
-                
-              />
-
-</div>
-
-
-      {/* Text Overlay */}
-      {/* <div className="relative w-[70%] m-auto top-48 z-10 flex flex-col justify-center items-center h-full px-6 text-center text-black bg-white ">
-        <h1 className="text-4xl md:text-6xl font-bold">
+                {/* Text Overlay */}
+                {/* <div className="relative w-[70%] m-auto top-48 z-10 flex flex-col justify-center items-center h-full px-6 text-center text-black bg-white ">
+        <h1 className="text-4xl md:text-6xl fontBold">
           Welcome to Royal Oaks Events Limited
         </h1>
         <p className="text-lg md:text-2xl font-light mt-4">
@@ -78,9 +68,7 @@ const HeroSection = () => {
           Party rentals in Lekki, Lagos, Nigeria.
         </p>
       </div> */}
-</div>
-
-              
+              </div>
             )}
           </div>
         ))}

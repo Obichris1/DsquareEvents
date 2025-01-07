@@ -17,8 +17,8 @@ const Footer = () => {
       {/* Contact Us */}
 
       <div className="flex flex-col gap-10 mb-4 w-[90%] m-auto py-12">
-      <div className="text-[#aaa5a5] text-xs flex flex-col gap-3 ">
-      <Typography  className="font-bold text-xs  uppercase text-[#aaa5a5] mb-4">Contact info</Typography>
+      <div className="text-[#aaa5a5] text-xs md:text-sm flex flex-col gap-3 ">
+      <Typography  className="font-bold uppercase text-[#aaa5a5] mb-4">Contact info</Typography>
         <span className="flex items-center gap-6">
           <AiOutlineEnvironment />{" "}
           <Link
@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Text */}
         <div className="flex items-center justify-center flex-col md:flex-row gap-1">
           <Typography className="text-xxs md:text-xs text-[#aaa5a5] text-center  ">&copy; 2024 D Square events center. | Designed by   </Typography>
-            <Typography className="text-xxs text-[#aaa5a5] text-center  "><Link href=""> Oxris solutions</Link></Typography>
+            <Typography className="text-xxs text-[#aaa5a5] text-center  "><Link href=""> OXRIS SOLUTIONS</Link></Typography>
           
         </div>
 

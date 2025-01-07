@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="space-y-8 md:space-y-16">
+    <div className="">
       {/* Hero Section */}
       <HeroSection />
 
@@ -14,37 +14,31 @@ export default function Home() {
       {/* Content Section */}
       <div className="w-[90%] flex flex-col md:flex-row gap-12 m-auto items-center">
         {/* Text Section */}
-        <div className="md:w-1/2 flex flex-col gap-6">
-          <Typography
-            className="text-left text-base md:text-lg leading-relaxed font-light text-gray-800"
-            variant="h6"
-          >
-            Located in the heart of Idimu, Ikotun,{" "}
-            <span className="text-brandYellow font-semibold">D'Square</span> Event
-            Centre is where unforgettable celebrations come to life. With our
-            spacious, elegant halls and modern facilities, we cater to all your
-            event needs, from weddings and birthdays to corporate gatherings and
+        <div className="md:w-1/2 flex flex-col gap-6 items-center justify-between">
+          <Typography className="text-left md:text-base text-sm font-light ">
+            <span className="text-brandYellow font-semibold">D'Square</span>{" "}
+            event centre is the premier destination for unforgettable occasions.
+            Our spacious and elegantly designed halls, coupled with
+            state-of-the-art facilities, provide the perfect setting for every
+            type of event—be it weddings, birthdays, corporate functions, or
             more.
           </Typography>
 
           <Typography
-            className="text-left text-base md:text-lg leading-relaxed font-light text-gray-800"
+            className="text-left md:text-base text-sm leading-relaxed font-light "
             variant="h6"
           >
-            At D'Square, we believe in making every moment extraordinary. Our
-            motto is:{" "}
+            At D'Square, we are committed to turning your visions into reality.
+            Guided by our motto
             <span className="italic font-semibold text-gray-900">
               "Think Celebration, Think D'Square."
             </span>{" "}
-            Let us help you create memories that last a lifetime. Explore our
-            venue and services today!
+            we aim to create experiences that leave lasting impressions.
           </Typography>
 
-          <Button
-            className="self-start bg-brandYellow text-black px-4 py-2 text-xs font-medium rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform"
-          >
+          <button className="self-start bg-brandYellow text-black px-4 py-3 text-xs font-medium rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform">
             More about us
-          </Button>
+          </button>
         </div>
 
         {/* Image Section */}
@@ -56,14 +50,14 @@ export default function Home() {
             height={600}
             className="max-h-[400px] rounded-lg shadow-lg object-cover"
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-black/40 rounded-lg"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-black/20 rounded-lg"></div>
         </div>
       </div>
 
       <hr className="w-[90%] m-auto" />
 
       {/* Packages Section */}
-      
+
       <PackagesSection />
     </div>
   );

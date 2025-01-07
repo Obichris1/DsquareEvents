@@ -84,7 +84,7 @@ const Gallery = () => {
           >
             {/* Close Button */}
             <button
-              className="absolute top-0 right-2 text-white font-bold text-xl"
+              className="absolute top-0 right-2 text-white fontBold text-xl"
               onClick={closeModal}
             >
               <FaTimes />

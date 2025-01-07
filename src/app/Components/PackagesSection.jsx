@@ -3,6 +3,7 @@
 import { Typography, Button } from "@mui/material";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const PackagesSection = () => {
   const controls = useAnimation();
@@ -76,7 +77,7 @@ const PackagesSection = () => {
     <div className="py-12" ref={sectionRef}>
       <div className="w-[90%] m-auto text-center space-y-8">
         <Typography
-          className="text-2xl md:text-3xl font-bold text-gray-800"
+          className="text-2xl md:text-3xl font-bold"
           variant="h4"
         >
           Dsquare Deals
@@ -97,7 +98,7 @@ const PackagesSection = () => {
               }}
             >
               <Typography
-                className="text-lg font-semibold text-gray-800 mb-2"
+                className="text-lg font-semibold mb-2"
                 variant="h6"
               >
                 {pkg.title}
@@ -122,11 +123,13 @@ const PackagesSection = () => {
               >
                 {pkg.price}
               </Typography>
+              <Link href='/Contact' >
               <Button
                 className="mt-4 px-4 py-2 bg-brandYellow text-black text-xs font-medium rounded-full hover:bg-[#d5a607] transition-colors justify-start"
               >
                 Book Now
-              </Button>
+              </Button></Link>
+              
             </motion.div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+'use client'
 import React, { useState,useEffect } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import Image from "next/image";
@@ -16,13 +17,6 @@ export const Carousel = () => {
   }, []);
 
 
-  const nextSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide + 1);
-  };
-
-  const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1);
-  };
   const data = [
     {
       src: "/Gallery/picture-10.jpg",
@@ -37,7 +31,7 @@ export const Carousel = () => {
       alt: "Image 3 for carousel"
     },
     {
-      src: "/Gallery/picture-12.jpg",
+      src: "/Gallery/picture-13.jpg",
       alt: "Image 4 for carousel"
     }
   ]
