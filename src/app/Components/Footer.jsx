@@ -19,7 +19,7 @@ const Footer = () => {
 
       <div className="flex flex-col gap-10 mb-4 w-[90%] m-auto py-12">
       <div className="text-[#aaa5a5] text-xs md:text-sm flex flex-col gap-3 ">
-      <Typography  className="font-bold uppercase text-[#aaa5a5] mb-4">Contact info</Typography>
+      <Typography  className="font-bold uppercase text-[#aaa5a5]  mb-4">Contact info</Typography>
         <span className="flex items-center gap-6">
           <AiOutlineEnvironment />{" "}
           <Link

@@ -125,7 +125,7 @@ const PackagesSection = () => {
               </Typography>
               <Link href='/Contact' >
               <Button
-                className="mt-4 px-4 py-2 bg-brandYellow font-semibold text-black text-xs  rounded-full hover:bg-[#d5a607] transition-colors justify-start"
+                className="mt-4 px-4 py-2 md:px-4 md:py-3 bg-brandYellow font-semibold text-black text-xs  rounded-full  transition-colors justify-start"
               >
                 Book Now
               </Button></Link>

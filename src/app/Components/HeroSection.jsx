@@ -10,17 +10,17 @@ const HeroSection = () => {
   const data = [
     {
       id: 2,
-    
+      title: "Hero1",
       image: "/Gallery/picture-5.jpg",
     },
     {
       id: 3,
-  
+      title: "Hero2",
       image: "/Gallery/picture-7.jpg",
     },
     {
       id: 4,
-    
+      title: "Hero3",
       image: "/Gallery/picture-13.jpg",
     },
   ];
@@ -36,7 +36,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className=" h-[calc(100vh-30rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden">
+    <div className=" h-[calc(100vh-35rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden]">
       <div className={isLargeScreen ? "relative w-full h-full" : "w-full  "}>
         {data.map((slide, index) => (
           <div
@@ -55,10 +55,9 @@ const HeroSection = () => {
             ) : (
               <div>
                 <div className="absolute inset-0">
-                  <Image src={slide.image} alt={slide.title} width={800} height={800} className="w-full" />
+                  <Image src={slide.image} alt={slide.title} width={800} height={800} className=" w-full" />
                 </div>
 
-            
               </div>
             )}
           </div>

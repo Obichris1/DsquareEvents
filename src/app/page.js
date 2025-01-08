@@ -9,10 +9,10 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
 
-      <hr className="w-[90%] m-auto" />
+      <hr className="w-[90%] m-auto " />
 
       {/* Content Section */}
-      <div className="w-[90%] flex flex-col md:flex-row gap-12 m-auto items-center">
+      <div className="w-[90%] flex flex-col md:flex-row gap-12 m-auto items-center mt-5">
         {/* Text Section */}
         <div className="md:w-1/2 flex flex-col gap-6 items-center justify-between">
           <Typography className="text-left md:text-base text-sm font-light ">
@@ -46,7 +46,7 @@ export default function Home() {
           <Image
             src="/Gallery/HeroImage3.jpeg"
             alt="Event Center"
-            width={400}
+            width={800}
             height={400}
             className="max-h-[400px] rounded-lg shadow-lg object-cover"
           />
