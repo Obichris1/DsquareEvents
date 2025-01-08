@@ -36,7 +36,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className=" h-[calc(100vh-35rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden]">
+    <div className=" h-[calc(100vh-30rem)] md:h-[calc(100vh-6rem)] relative overflow-hidden]">
       <div className={isLargeScreen ? "relative w-full h-full" : "w-full  "}>
         {data.map((slide, index) => (
           <div
