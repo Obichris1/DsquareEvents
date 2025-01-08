@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import React from "react";
 import Link from "next/link";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -9,7 +9,7 @@ import {
   AiFillX,
   AiOutlineWhatsApp,
   AiOutlineX,
-  AiOutlineInstagram
+  AiOutlineInstagram,
 } from "react-icons/ai";
 import MobileNav from "./MobileNav";
 
@@ -28,51 +28,48 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div  className={`h-24 sticky py-4 top-0 left-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? "bg-black " : "bg-black "
-    }`}>  
+    <div
+      className={`h-24 sticky py-4 top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-black " : "bg-black "
+      }`}
+    >
       {/* DESKTOP NAVIGATION */}
       <div className="hidden lg:flex justify-between items-center w-[90%] m-auto">
         <div className="">
           <Link href="/">
-           
             <img src="/Logo.jpg" alt="" width={180} />
           </Link>
         </div>
 
-       
-          <div className="flex gap-12 text-[12px] mr-36 uppercase navlinks">
-            <Link className="" href="/">
-              Home
-            </Link>
-            <Link className="" href="/About">
-              About Us
-            </Link>
+        <div className="flex gap-12 text-[12px] mr-36 uppercase navlinks">
+          <Link className="" href="/">
+            Home
+          </Link>
+          <Link className="" href="/About">
+            About Us
+          </Link>
 
-            <Link className="" href="/Gallery">
-              Gallery
-            </Link>
+          <Link className="" href="/Gallery">
+            Gallery
+          </Link>
 
-            <Link className="" href="/Contact">
-              Contact Us
-            </Link>
-          </div>
+          <Link className="" href="/Contact">
+            Contact Us
+          </Link>
+        </div>
 
-          {/* SOCIAL MEDIA  */}
+        {/* SOCIAL MEDIA  */}
 
-          <div className="flex gap-3">
-            <Link href="">
-              <AiFillFacebook />
-            </Link>
-
-            <Link href="">
-              <AiOutlineInstagram />
-            </Link>
-
-            <Link href="">
-              <AiOutlineX />
-            </Link>
-         
+        <div className="flex gap-3">
+          <Link href="https://www.instagram.com/dsquarevents/" target="_blank">
+            <AiOutlineInstagram />
+          </Link>
+          <Link href="" target="_blank">
+            <AiFillFacebook />
+          </Link>
+          <Link href="">
+            <AiOutlineX />
+          </Link>
         </div>
       </div>
 
@@ -80,14 +77,11 @@ const Navbar = () => {
       <div className="flex items-center justify-between lg:hidden w-[90%] m-auto">
         <div className="">
           <Link href="/">
-            
             <img src="/Logo.jpg" alt="" width={150} />
           </Link>
         </div>
         <div className="">
           <MobileNav />
-
-       
         </div>
       </div>
     </div>

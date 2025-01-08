@@ -206,7 +206,7 @@ export default function ContactForm() {
 
         <Button
           type="submit"
-          className="px-6 md:px-4 py-3 md:text-xl self-start bg-gray-100 text-black hover:scale-110 text-sm"
+          className="px-4 py-3 md:text-xl self-start bg-brandYellow text-black hover:scale-105 hover:shadow-md transition-transform font-bold rounded-full text-sm"
         >
           {isLoading ? <CircularProgress size={20} className="text-brandYellow" /> : <Typography className="text-sm ">Submit</Typography>}
         </Button>

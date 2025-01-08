@@ -24,7 +24,7 @@ const page = () => {
             rel="noopener noreferrer"
             className=" text-[#333] text-sm"
           >
-            235 Ikotun - Idimu Rd, Egbe, Lagos 102213, Lagos
+           235, Ariket Plaza Alake B/stop Ikotun-Idimu Road, Lagos
           </Link>
         </div>
       </div>

@@ -46,13 +46,16 @@ const Footer = () => {
           {/* SOCIAL MEDIA  */}
 
           <div className="flex gap-3 md:self-end">
+
+          <Link href="https://www.instagram.com/dsquarevents/" target="_blank" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
+              <AiOutlineInstagram />
+            </Link>
+            
             <Link href="" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
               <AiFillFacebook />
             </Link>
 
-            <Link href="" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
-              <AiOutlineInstagram />
-            </Link>
+          
 
             <Link href="" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
               <AiOutlineX />

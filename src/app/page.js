@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeroSection from "./Components/HeroSection";
 import PackagesSection from "./Components/PackagesSection";
 import { Typography, Button } from "@mui/material";
@@ -15,7 +16,7 @@ export default function Home() {
       <div className="w-[90%] flex flex-col md:flex-row gap-12 m-auto items-center mt-5">
         {/* Text Section */}
         <div className="md:w-1/2 flex flex-col gap-6 items-center justify-between">
-          <Typography className="text-left md:text-base text-sm font-light ">
+          <Typography className="text-left md:text-base text-sm  ">
             <span className="text-brandYellow font-semibold">D'Square</span>{" "}
             event centre is the premier destination for unforgettable occasions.
             Our spacious and elegantly designed halls, coupled with
@@ -25,7 +26,7 @@ export default function Home() {
           </Typography>
 
           <Typography
-            className="text-left md:text-base text-sm leading-relaxed font-light "
+            className="text-left md:text-base text-sm leading-relaxed "
             variant="h6"
           >
             At D'Square, we are committed to turning your visions into reality.
@@ -35,10 +36,13 @@ export default function Home() {
             </span>{" "}
             we aim to create experiences that leave lasting impressions.
           </Typography>
+          <Link href="/About" className="self-start">
+          <Button className=" bg-brandYellow text-black px-4 py-3 md:p-4 text-xs uppercase font-semibold rounded-full shadow-sm hover:scale-105 hover:shadow-md transition-transform">
+        More about us
+          </Button>
 
-          <button className="self-start bg-brandYellow text-black px-4 py-3 md:p-4 text-xs uppercase font-semibold rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform">
-            More about us
-          </button>
+          </Link>
+         
         </div>
 
         {/* Image Section */}

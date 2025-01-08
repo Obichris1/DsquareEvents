@@ -34,7 +34,7 @@ const AboutSection = () => {
           </Typography>
           <div className=" rounded-lg">
             
-              <Typography className="text-[14px] leading-7">
+              <Typography className="text-[14px] ">
                 With a spacious 600-seating capacity, our facility is designed
                 to provide comfort and style for gatherings of all sizes. 
                 From weddings and corporate events to intimate gatherings, our versatile space is designed to adapt to your unique needs.

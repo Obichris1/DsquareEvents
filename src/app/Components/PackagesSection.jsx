@@ -80,7 +80,7 @@ const PackagesSection = () => {
           className="text-2xl md:text-3xl font-bold"
           variant="h4"
         >
-          <span className="text-brandYellow font-semibold">D Square</span> Deals
+           <span className="text-brandYellow font-semibold">Active</span> Deals
         </Typography>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -125,7 +125,7 @@ const PackagesSection = () => {
               </Typography>
               <Link href='/Contact' >
               <Button
-                className="mt-4 px-4 py-2 md:px-4 md:py-3 bg-brandYellow font-semibold text-black text-xs  rounded-full  transition-colors justify-start"
+                className="mt-4 px-4 py-2 md:px-4 md:py-3 bg-brandYellow font-semibold text-black text-xs  rounded-full hover:scale-105  transition-transform justify-start"
               >
                 Book Now
               </Button></Link>

@@ -6,8 +6,11 @@ import { useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import {
   AiFillFacebook,
+  AiFillInstagram,
+  AiOutlineFacebook,
   AiOutlineWhatsApp,
   AiOutlineX,
+  AiOutlineInstagram
 } from "react-icons/ai";
 
 const links = [
@@ -42,15 +45,15 @@ const MobileNav = () => {
         ))}
 
         {/* SOCIAL MEDIA */}
-        <div className="flex gap-3 mt-20">
+        <div className="flex gap-6 mt-20">
           <Link href="">
-            <AiFillFacebook />
+            <AiOutlineInstagram size={15}  />
           </Link>
           <Link href="">
-            <AiOutlineWhatsApp />
+            <AiFillFacebook size={15} />
           </Link>
           <Link href="">
-            <AiOutlineX />
+            <AiOutlineX size={15}/>
           </Link>
         </div>
       </div>
