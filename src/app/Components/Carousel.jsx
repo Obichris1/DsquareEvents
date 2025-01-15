@@ -26,14 +26,17 @@ export const Carousel = () => {
       src: "/Gallery/picture-9.jpg",
       alt: "Image 2 for carousel"
     },
+
+    {
+      src: "/Gallery/picture-13.jpg",
+      alt: "Image 4 for carousel"
+    },
+    
     {
       src: "/Gallery/picture-8.jpg",
       alt: "Image 3 for carousel"
     },
-    {
-      src: "/Gallery/picture-13.jpg",
-      alt: "Image 4 for carousel"
-    }
+  
   ]
   return (
     <div className="carousel">

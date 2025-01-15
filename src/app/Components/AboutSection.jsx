@@ -29,12 +29,12 @@ const AboutSection = () => {
         className="flex flex-col md:flex-row items-center justify-center gap-12"
         >
         <div className="md:w-[50%] flex flex-col gap-4">
-          <Typography variant="h6" className="font-bold mb-2">
+          <Typography variant="h6" className="font-bold mb-2 text-[17px] md:text-xl">
             Why Choose <span className="text-brandYellow">D'Square?</span>
           </Typography>
           <div className=" rounded-lg">
             
-              <Typography className="text-[14px] ">
+              <Typography className="text-[14px] leading-7 ">
                 With a spacious 600-seating capacity, our facility is designed
                 to provide comfort and style for gatherings of all sizes. 
                 From weddings and corporate events to intimate gatherings, our versatile space is designed to adapt to your unique needs.
@@ -75,7 +75,7 @@ const AboutSection = () => {
         </motion.div>
 
         <div className="md:w-[50%] flex flex-col gap-4">
-          <Typography variant="h6" className="font-bold mb-2">
+          <Typography variant="h6" className="font-bold mb-2 text-[17px] md:text-xl">
             Dedicated <span className="text-brandYellow">Photoshoot Corner</span>
           </Typography>
           <div className="">
@@ -100,7 +100,7 @@ const AboutSection = () => {
         className="flex flex-col md:flex-row items-center justify-center gap-12 "
       >
         <div className="md:w-[50%] flex flex-col gap-4">
-          <Typography variant="h6" className="font-bold mb-2">
+          <Typography variant="h6" className="font-bold mb-2 text-[17px] md:text-xl">
             Modern <span className="text-brandYellow">Amenities</span>
           </Typography>
           <div className="">

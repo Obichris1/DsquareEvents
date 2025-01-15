@@ -41,7 +41,7 @@ const PackagesSection = () => {
         "Standard seating arrangement",
         "Basic decoration",
       ],
-      price: "₦50,000",
+      price: "350 Sitting Capacity",
     },
     {
       title: "Silver",
@@ -52,7 +52,7 @@ const PackagesSection = () => {
         "Enhanced decoration",
         
       ],
-      price: "₦100,000",
+      price: "350 - 500 Sitting Capacity",
     },
     {
       title: "Gold",
@@ -64,7 +64,7 @@ const PackagesSection = () => {
    
        
       ],
-      price: "₦200,000",
+      price: "350 - Maximum Sitting Capacity",
     },
   ];
 
@@ -118,7 +118,7 @@ const PackagesSection = () => {
                 ))}
               </ul>
               <Typography
-                className="text-xl font-bold text-gray-800 mt-4"
+                className="text-lg md:text-xl font-bold text-gray-800 mt-4"
                 variant="h5"
               >
                 {pkg.price}

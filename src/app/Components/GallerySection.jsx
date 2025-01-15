@@ -9,21 +9,23 @@ const Gallery = () => {
   const [isVideo, setIsVideo] = useState(false);
 
   const items = [
-    { type: "image", src: "/Gallery/HeroImage1.jpg", alt: "Event 1" },
-    { type: "video", src: "/Gallery/Vid8.mp4", alt: "Event 3" },
-    { type: "image", src: "/Gallery/HeroImage2.jpg", alt: "Event 2" },
-    { type: "image", src: "Gallery/Gallery1.webp", alt: "Event 1" },
-    { type: "video", src: "/Gallery/Vid6.mp4", alt: "Event 2" },
-    { type: "image", src: "/Gallery/Gallery5.jpg", alt: "Event 3" },
-    { type: "video", src: "/Gallery/Vid2.mp4", alt: "Event 1" },
-    { type: "image", src: "/Gallery/Gallery6.jpg", alt: "Event 2" },
-    { type: "video", src: "Gallery/Vid1.mp4", alt: "Event 3" },
-    { type: "image", src: "Gallery/Gallery3.webp", alt: "Event 1" },
-    { type: "video", src: "/Gallery/Vid4.mp4", alt: "Event 2" },
-    { type: "video", src: "/Vid1.mp4", alt: "Event 3" },
-    { type: "image", src: "/Gallery/HeroImage1.jpg", alt: "Event 1" },
-    { type: "image", src: "/Gallery/HeroImage2.jpg", alt: "Event 2" },
-    { type: "video", src: "/Vid1.mp4", alt: "Event 3" },
+    { type: "image", src: "/Gallery/HeroImage1.jpeg", alt: "Event 1" },
+    { type: "video", src: "/Gallery/Vid8.mp4", alt: "Event 2" },
+    { type: "image", src: "/Gallery/HeroImage2.jpeg", alt: "Event 3" },
+    { type: "image", src: "Gallery/Gallery1.webp", alt: "Event 4" },
+    { type: "video", src: "/Gallery/Vid6.mp4", alt: "Event 5" },
+    { type: "image", src: "/Gallery/Gallery5.jpeg", alt: "Event 6" },
+    { type: "video", src: "/Gallery/Vid2.mp4", alt: "Event 7" },
+    { type: "image", src: "/Gallery/Gallery6.jpg", alt: "Event 8" },
+    { type: "video", src: "Gallery/Vid1.mp4", alt: "Event 9" },
+    { type: "image", src: "Gallery/Gallery3.webp", alt: "Event 10" },
+    { type: "video", src: "/Gallery/Vid4.mp4", alt: "Event 11" },
+    { type: "image", src: "/Gallery/picture-4.jpg", alt: "Event 14" },
+    { type: "video", src: "Gallery/Vid8.mp4", alt: "Event 12" },
+    { type: "image", src: "/Gallery/Gallery9.jpg", alt: "Event 13" },
+ 
+    { type: "video", src: "/Gallery/Advert.mp4", alt: "Event 15" }
+    ,
   ];
 
   const openModal = (media, isVideo) => {

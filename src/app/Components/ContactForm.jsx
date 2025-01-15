@@ -1,4 +1,3 @@
-
 "use client";
 import { useState } from "react";
 import {
@@ -7,7 +6,8 @@ import {
   Button,
   NumberTypography,
   InputAdornment,
-  CircularProgress
+  CircularProgress,
+  MenuItem,
 } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers";
 import * as dfns from "date-fns";
@@ -16,9 +16,8 @@ import {
   AiOutlineUser,
   AiFillCheckCircle,
   AiOutlinePhone,
-
   AiOutlineMail,
-  AiOutlineCheckCircle
+  AiOutlineCheckCircle,
 } from "react-icons/ai";
 
 import { format } from "date-fns";
@@ -29,17 +28,22 @@ export default function ContactForm() {
     email: "",
     message: "",
     phoneNumber: "",
+    questionaire: "",
   });
   const [status, setStatus] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [rawDate, setRawDate] = useState(""); // Stores ISO format (YYYY-MM-DD)
-  const [formattedDate, setFormattedDate] = useState("No date selected"); // 
-  const [success, setSuccess] = useState(false)
+  const [formattedDate, setFormattedDate] = useState("No date selected"); //
+  const [success, setSuccess] = useState(false);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData);
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value, // Always reference the latest state
+    }));
   };
+  console.log(formData);
 
   const handleDate = (event) => {
     const selectedDate = event.target.value; // ISO date string
@@ -76,7 +80,7 @@ export default function ContactForm() {
       if (response.ok) {
         setFormData({ name: "", email: "", message: "" });
         setStatus("Message sent successfully!");
-        setSuccess(true)
+        setSuccess(true);
       } else {
         setStatus("Error sending message. ");
       }
@@ -86,32 +90,32 @@ export default function ContactForm() {
         email: "",
         message: "",
         phoneNumber: "",
+        questionaire: "",
       });
       setRawDate("");
     } catch (error) {
       setStatus("Errorrrrrrrrrrrrrrrrrrrrr");
-    }
-
-    finally {
+    } finally {
       setIsLoading(false); // Hide loading spinner
     }
   };
 
-
-   // Get today's date in ISO format for the `min` attribute
-   const today = new Date().toISOString().split("T")[0];
+  // Get today's date in ISO format for the `min` attribute
+  const today = new Date().toISOString().split("T")[0];
 
   return (
     <>
-    
-      <form onSubmit={handleSubmit} className={` ${success ? 'hidden' : 'flex flex-col gap-8' }`}>
+      <form
+        onSubmit={handleSubmit}
+        className={` ${success ? "hidden" : "flex flex-col gap-8"}`}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* <label htmlFor="name">Name:</label> */}
           <TextField
             type="text"
             id="name"
             name="name"
-            value={formData.name}
+            value={formData?.name}
             onChange={handleChange}
             required
             className=""
@@ -134,9 +138,8 @@ export default function ContactForm() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
+            value={formData?.email}
             onChange={handleChange}
-        
             label="Email"
             // margin="normal"
             fullWidth
@@ -157,7 +160,7 @@ export default function ContactForm() {
             type="number"
             id="phoneNumber"
             name="phoneNumber"
-            value={formData.phoneNumber || ""}
+            value={formData?.phoneNumber || ""}
             onChange={handleChange}
             required
             label="Phone Number"
@@ -183,12 +186,42 @@ export default function ContactForm() {
             onChange={handleDate}
             label="Date of event"
             inputProps={{
-              min: today, 
+              min: today,
             }}
             InputLabelProps={{
               shrink: true, // Ensures the label stays visible
             }}
           />
+
+          <TextField
+            label="How did you hear about us?"
+            variant="outlined"
+            fullWidth
+            select
+            onChange={handleChange}
+            value={formData?.questionaire || ""}
+            name="questionaire"
+          >
+            <MenuItem value="Instagram" className="text-primary-main">
+              Instagram
+            </MenuItem>
+            <MenuItem value="Facebook" className="text-primary-main">
+              Facebook
+            </MenuItem>
+
+            <MenuItem value="twitter" className="text-primary-main">
+              X (twitter)
+            </MenuItem>
+            <MenuItem value="Paper Flyers" className="text-primary-main">
+              Paper Flyers
+            </MenuItem>
+            <MenuItem value="From a Friend" className="text-primary-main">
+              From a Friend
+            </MenuItem>
+            <MenuItem value="Other" className="text-primary-main">
+              Other
+            </MenuItem>
+          </TextField>
 
           <TextField
             type="text"
@@ -208,22 +241,23 @@ export default function ContactForm() {
           type="submit"
           className="px-4 py-3 md:text-xl self-start bg-brandYellow text-black hover:scale-105 hover:shadow-md transition-transform font-bold rounded-full text-sm"
         >
-          {isLoading ? <CircularProgress size={20} className="text-brandYellow" /> : <Typography className="text-sm ">Submit</Typography>}
+          {isLoading ? (
+            <CircularProgress size={20} className="text-black font-semibold" />
+          ) : (
+            <Typography className="text-sm font-semibold ">Submit</Typography>
+          )}
         </Button>
-       
       </form>
 
-      {success  &&
-
-      (
+      {success && (
         <div className="bg-green-200 p-4 my-10 rounded-xl flex justify-center items-center gap-5 w-full md:max-w-6xl m-auto  ">
-                 <AiOutlineCheckCircle className="text-2xl" />
-          <Typography className="text-xs md:text-sm ">Thank you for contacting D'square Events Centre! We will be in touch with you shortly.</Typography>
+          <AiOutlineCheckCircle className="text-2xl" />
+          <Typography className="text-xs md:text-sm ">
+            Thank you for contacting D'square Events Centre! We will be in touch
+            with you shortly.
+          </Typography>
         </div>
-      )
-      
-      
-      }
+      )}
     </>
   );
 }

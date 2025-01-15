@@ -15,7 +15,7 @@ const page = () => {
   console.log(animatedText);
   
   return (
-    <div className='w-[90%] m-auto flex flex-col gap-4 md:w-[90%]'>
+    <div className='w-[90%] m-auto flex flex-col gap-4 md:w-[90%] '>
       {/* <Typography variant='h2' className='text-center'>Think celebration, Think D'square</Typography>
        */}
        <TypewriterEffect text={animatedText} />

@@ -19,12 +19,12 @@ const page = () => {
         <div className="flex gap-3 items-center justify-center">
           <AiFillEnvironment className="text-sm" />{" "}
           <Link
-            href="https://www.google.com/maps?q=37.7749,-122.4194"
+            href="https://www.google.com/maps/place/D+SQUARE+EVENT+CENTRE/@6.5667163,3.2459785,14z/data=!4m10!1m2!2m1!1s235,+Ariket+Plaza+Alake+B%2Fstop+Ikotun-Idimu+Road,+Lagos!3m6!1s0x103b9180f7b913c9:0x17f9c2fa189f65e7!8m2!3d6.5622673!4d3.2736744!15sCjcyMzUsIEFyaWtldCBQbGF6YSBBbGFrZSBCL3N0b3AgSWtvdHVuLUlkaW11IFJvYWQsIExhZ29zWjciNTIzNSBhcmlrZXQgcGxhemEgYWxha2UgYiBzdG9wIGlrb3R1biBpZGltdSByb2FkIGxhZ29zkgEYZXZlbnRfbWFuYWdlbWVudF9jb21wYW55mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5sTlV4RGNFTlJFQUXgAQD6AQQIABAy!16s%2Fg%2F11p_7ckh03?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D  "
             target="_blank"
             rel="noopener noreferrer"
             className=" text-[#333] text-sm"
           >
-           235, Ariket Plaza Alake B/stop Ikotun-Idimu Road, Lagos
+            <p>235, Ariket Plaza Alake B/stop Ikotun-Idimu Road, Lagos</p>
           </Link>
         </div>
       </div>

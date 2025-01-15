@@ -1,13 +1,12 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 
-const TypewriterEffect = ({text}) => {
+const TypewriterEffect = ({ text }) => {
   // const text = "Think celebrations, Think D'square";
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
   console.log(text);
-  
 
   useEffect(() => {
     if (index < text.length) {
@@ -22,7 +21,7 @@ const TypewriterEffect = ({text}) => {
 
   return (
     <div className="text-center mt-10">
-      <h1 className="text-xl md:text-3xl font-bold text-gray-800">
+      <h1 className="text-xl md:text-3xl font-bold text-black">
         {displayedText.split(" ").map((word, wordIndex) => {
           // Highlight specific words dynamically
           if (word === "us") {
@@ -32,7 +31,7 @@ const TypewriterEffect = ({text}) => {
               </span>
             );
           }
-          if (word === "D'square" ) {
+          if (word === "D'square") {
             return (
               <span key={wordIndex} className="text-brandYellow font-bold">
                 {word}

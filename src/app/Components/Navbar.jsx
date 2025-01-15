@@ -64,7 +64,10 @@ const Navbar = () => {
           <Link href="https://www.instagram.com/dsquarevents/" target="_blank">
             <AiOutlineInstagram />
           </Link>
-          <Link href="" target="_blank">
+          <Link
+            href="https://www.facebook.com/profile.php?id=100090758267591&mibextid=ZbWKwL"
+            target="_blank"
+          >
             <AiFillFacebook />
           </Link>
           <Link href="">
