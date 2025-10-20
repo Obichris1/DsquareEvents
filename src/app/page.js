@@ -17,7 +17,7 @@ export default function Home() {
         {/* Text Section */}
         <div className="md:w-1/2 flex flex-col gap-6 items-center justify-between">
           <Typography className="text-left md:text-base text-sm  ">
-            <span className="text-brandYellow font-semibold">D'Square</span>{" "}
+            <span className="text-brandYellow font-semibold">D Square</span>{" "}
             event centre is the premier destination for unforgettable occasions.
             Our spacious and elegantly designed halls, coupled with
             state-of-the-art facilities, provide the perfect setting for every
@@ -29,20 +29,18 @@ export default function Home() {
             className="text-left md:text-base text-sm leading-relaxed "
             variant="h6"
           >
-            At D'Square, we are committed to turning your visions into reality.
+            At D Square, we are committed to turning your visions into reality.
             Guided by our motto
             <span className="italic font-semibold text-gray-900">
-              "Think Celebration, Think D'Square."
+              "Think Celebration, Think D Square."
             </span>{" "}
             we aim to create experiences that leave lasting impressions.
           </Typography>
           <Link href="/About" className="self-start">
-          <Button className=" bg-brandYellow text-black px-4 py-3 md:p-4 text-xs uppercase font-semibold rounded-full shadow-sm hover:scale-105 hover:shadow-md transition-transform">
-        More about us
-          </Button>
-
+            <Button className=" bg-brandYellow text-black px-4 py-3 md:p-4 text-xs uppercase font-semibold rounded-full shadow-sm hover:scale-105 hover:shadow-md transition-transform">
+              More about us
+            </Button>
           </Link>
-         
         </div>
 
         {/* Image Section */}

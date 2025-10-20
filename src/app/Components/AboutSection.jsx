@@ -20,7 +20,7 @@ const slideInLeft = {
 const AboutSection = () => {
   return (
     <div className='flex flex-col gap-8'>
-          {/* Section 1: Why Choose D'Square */}
+          {/* Section 1: Why Choose D Square */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -30,7 +30,7 @@ const AboutSection = () => {
         >
         <div className="md:w-[50%] flex flex-col gap-4">
           <Typography variant="h6" className="font-bold mb-2 text-[17px] md:text-xl">
-            Why Choose <span className="text-brandYellow">D'Square?</span>
+            Why Choose <span className="text-brandYellow">D Square?</span>
           </Typography>
           <div className=" rounded-lg">
             

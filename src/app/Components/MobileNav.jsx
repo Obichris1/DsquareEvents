@@ -46,13 +46,13 @@ const MobileNav = () => {
 
         {/* SOCIAL MEDIA */}
         <div className="flex gap-6 mt-20">
-          <Link href="https://www.instagram.com/dsquarevents/">
+          <Link href="https://www.instagram.com/dsquarevents/" target='_blank'>
             <AiOutlineInstagram size={15}  />
           </Link>
           <Link href="https://www.facebook.com/profile.php?id=100090758267591&mibextid=ZbWKwL" target='_blank'>
             <AiFillFacebook size={15} />
           </Link>
-          <Link href="">
+          <Link href="https://x.com/DEventcent23511" target='_blank'>
             <AiOutlineX size={15}/>
           </Link>
         </div>

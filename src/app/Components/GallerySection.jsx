@@ -100,6 +100,7 @@ const Gallery = () => {
                 autoPlay
                 muted
                 playsInline 
+                loop
                 className="w-full max-w-full max-h-[80vh] rounded-xl p-1"
               />
             ) : (

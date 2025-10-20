@@ -70,7 +70,7 @@ const Navbar = () => {
           >
             <AiFillFacebook />
           </Link>
-          <Link href="">
+          <Link href="https://x.com/DEventcent23511" target="_blank">
             <AiOutlineX />
           </Link>
         </div>

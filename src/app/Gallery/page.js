@@ -9,14 +9,14 @@ import TypewriterEffect from '../Components/Typewriter'
 
 const page = () => {
 
-  const animatedText = "Think celebrations, Think D'square"
+  const animatedText = "Think celebrations, Think D Square"
 
 
   console.log(animatedText);
   
   return (
     <div className='w-[90%] m-auto flex flex-col gap-4 md:w-[90%] '>
-      {/* <Typography variant='h2' className='text-center'>Think celebration, Think D'square</Typography>
+      {/* <Typography variant='h2' className='text-center'>Think celebration, Think D Square</Typography>
        */}
        <TypewriterEffect text={animatedText} />
        <hr className='mt-3' />

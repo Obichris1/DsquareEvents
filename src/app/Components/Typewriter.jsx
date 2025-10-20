@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 const TypewriterEffect = ({ text }) => {
-  // const text = "Think celebrations, Think D'square";
+  // const text = "Think celebrations, Think D Square";
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
   console.log(text);
@@ -31,7 +31,7 @@ const TypewriterEffect = ({ text }) => {
               </span>
             );
           }
-          if (word === "D'square") {
+          if (word === "D Square") {
             return (
               <span key={wordIndex} className="text-brandYellow font-bold">
                 {word}

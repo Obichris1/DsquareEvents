@@ -57,7 +57,7 @@ const Footer = () => {
 
           
 
-            <Link href="" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
+            <Link href="https://x.com/DEventcent23511" target="_blank" className="p-3 bg-[#aaa5a5] rounded-full text-white hover:bg-transparent">
               <AiOutlineX />
             </Link>
          
