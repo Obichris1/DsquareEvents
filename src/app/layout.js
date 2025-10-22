@@ -43,6 +43,7 @@ export const metadata = {
   other: {
     "google-site-verification": "9wtmGoGEcyepfMCwBoOSGarwMNnSrmD_vIIy29Qz-1c", // Replace if available
     // google-site-verification=9wtmGoGEcyepfMCwBoOSGarwMNnSrmD_vIIy29Qz-1c
+    
   },
 };
 
