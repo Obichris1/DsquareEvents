@@ -35,38 +35,36 @@ const PackagesSection = () => {
   const packages = [
     {
       title: "Bronze",
-      description: "Basic package for small gatherings.",
+      description: "Ideal for smaller gatherings and events.",
       features: [
-        "Venue access for 4 hours",
-        "Standard seating arrangement",
-        "Basic decoration",
+        "4 Hours Uninterrupted Power Supply",
+        "Standard Chairs",
+        "350 or less Capacity",
       ],
-      price: "350 Sitting Capacity",
+      price: "",
     },
     {
       title: "Silver",
-      description: "Perfect for mid-sized celebrations.",
+      description: "Perfect for mid-sized events and celebrations.",
       features: [
-        "Venue access for 6 hours",
-        "Premium seating arrangement",
-        "Enhanced decoration",
-        
+        "8 Hours Uninterrupted Power Supply",
+        "Silver Chairs",
+        "350 - 500 Capacity",
       ],
-      price: "350 - 500 Sitting Capacity",
+      price: "",
     },
     {
       title: "Gold",
-      description: "Premium package for grand occasions.",
+      description: "Premium package for grand occasions and large events.",
       features: [
-        "Venue access for 8 hours",
-        "Luxury seating arrangement",
-        "Customized decoration",
-   
-       
+        "8 Hours Uninterrupted Power Supply",
+        "Golden Chairs",
+        "350 to Maximum Capacity",
       ],
-      price: "350 - Maximum Sitting Capacity",
+      price: "",
     },
   ];
+  
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
