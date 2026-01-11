@@ -25,7 +25,7 @@ export async function POST(request) {
 
   const mailOptions = {
     from: email,
-    to: "obichris202@gmail.com", // Replace with your receiving email
+    to: "dolaposquare123@gmail.com", // Replace with your receiving email
     subject: "D Square Event Center Booking",
     html: `
     <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
