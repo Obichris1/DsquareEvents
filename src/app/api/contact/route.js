@@ -7,7 +7,7 @@ export async function POST(request) {
     await request.json();
 
   console.log(formattedDate);
-  //   console.log(process.env.EMAIL_PASS);
+  //   console.log(process.env.EMAIL_PASS)
 
   // Configure Nodemailer with your email service
   const transporter = nodemailer.createTransport({
