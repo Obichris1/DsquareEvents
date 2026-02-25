@@ -13,7 +13,7 @@ const page = () => {
 
   return (
     <div className="w-[90%] m-auto space-y-8">
-      {/* Typewriter Heading */}
+      {/* Typewriter Heading*/}
       <TypewriterEffect text={animatedText} />
       <hr className="" />
 
